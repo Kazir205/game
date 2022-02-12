@@ -1,0 +1,131 @@
+.left_bar {
+    border-right: var(--grayBorder);
+    border-top: var(--grayBorder);
+    border-left: none;
+    height: 93vh;
+    display: flex;
+    width: 250px;
+}
+.left_icon {
+    background-color: rgba(0, 0, 0, 0.426);
+    width: 60px;
+    border-right: var(--grayBorder);
+}
+.top_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55%;
+    justify-content: space-around;
+}
+.left_menu_icon {
+    color: white;
+    cursor: pointer;
+}
+
+.left_menu_icon:nth-child(odd) {
+    color: var(--golden);
+}
+
+.left_bottom_menu_icon {
+    color: gray;
+    font-size: 18px !important;
+    cursor: pointer;
+}
+
+.bottom_icons {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: 480px;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+    padding: 7px 5px;
+    margin: 2px 0;
+    margin-left: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.26);
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li a {
+    margin-left: 15px;
+}
+
+.menu li.active {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.26);
+    position: relative;
+}
+
+.menu li.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    left: -.5px;
+    background-color: var(--golden);
+}
+
+.subHead{
+    margin-left: 20px !important;
+}
+
+.menuNoti {
+    background-color: var(--golden);
+    height: 20px;
+    width: 25px;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 3px 6px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+    top: 5px;
+}
+
+.bottom_menu_icon_box {
+    display: flex;
+    color: rgba(128, 128, 128, 0.979);;
+    font-size: 12px !important;
+    font-weight: bolder;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.right_bottom_menu_icon {
+    font-size: 12px !important;
+    margin-right: 10px;
+    color: rgb(39, 186, 231);
+}

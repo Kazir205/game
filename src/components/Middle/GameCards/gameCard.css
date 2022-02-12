@@ -1,0 +1,52 @@
+.gameCards {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.gameCard {
+    width: 100px;
+    margin: 13px;
+}
+.cardImage {
+    width: 100px;
+    height: 130px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: .4s transform;
+}
+.gameCard:hover .cardImage {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(163, 161, 161, 0.096);
+    padding:3px 8px;
+    border-radius: 10px;
+}
+.game_name {
+    font-size: 9px;
+    width: 60%;
+    overflow: clip;
+    word-wrap: nowrap;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.live_watch {
+    display: flex;
+    font-size: 8px !important;
+    color: white;
+    font-weight: bold;
+}
+.live_watch_icon {
+    font-size: 15px !important;
+    color: rgb(39, 186, 231);
+    font-size: 10px !important;
+    display: flex;
+    margin-top: 1.5px;
+    margin-right: 2px;
+}
